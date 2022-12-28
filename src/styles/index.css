@@ -1,3 +1,37 @@
 /* 
     General Styles
 */
+
+.color,
+.colorFooter{
+    background-color: #9acd32;
+}
+
+.button {
+    background-color: lightgreen;
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.favorite{
+    background-color: lightgreen;
+    float: right;
+}
+
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+
+.horizontal-section{
+    width: auto; height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
