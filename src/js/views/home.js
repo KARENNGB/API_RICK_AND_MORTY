@@ -14,51 +14,37 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="row">
+    <div className="row row-cols-10">
       <div className="text-left mx-5 px-5 h-100">
         <div className="element1">
           <h1>Characters</h1>
-          <div className="container-fluid">
+          <div className="img-fluid">
             <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-              {store.characters.map((item) => {
-                return (
-                  <Card
-                    key={item.id}
-                    name={item.name}
-                    image={item.image}
-                    species={item.species}
-                    gender={item.gender}
-                  />
-                );
-              })}
+              <Card />
             </div>
           </div>
         </div>
-        <div className="element2">
-          <h1>Location</h1>
-          <div className="container-fluid">
-            <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-              {store.locations.map((item) => {
-                return (
-                  <CardLocation
-                    key={item.id}
-                    type={item.type}
-                    name={item.name}
-                  />
-                );
-              })}
+      </div>
+      <div className="row">
+        <div className="text-left mx-5 px-5 h-100">
+          <div className="element2">
+            <h1>Location</h1>
+            <div className="img-fluid">
+              <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                <CardLocation />
+              </div>
             </div>
           </div>
         </div>
-        <div className="element3">
-          <h1>Episode</h1>
-          <div className="container-fluid">
-            <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-              {store.episodes.map((item) => {
-                return (
-                  <CardEpisode key={item.id} name={item.name} id={item.id} />
-                );
-              })}
+      </div>
+      <div className="row">
+        <div className="text-left mx-5 px-5 h-100">
+          <div className="element3">
+            <h1>Episode</h1>
+            <div className="img-fluid">
+              <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                <CardEpisode />
+              </div>
             </div>
           </div>
         </div>

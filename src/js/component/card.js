@@ -4,18 +4,17 @@ import { Link, useParams } from "react-router-dom";
 
 const Card = () => {
   const { store, actions } = useContext(Context);
-  //
-  const params = useParams();
+
   useEffect(() => {
-    actions.getCharacters()
-  },[])
+    actions.getCharacters();
+  }, []);
 
   return store.characters.map((character) => {
     return (
       <div className="horizontal-section" key={character.id}>
         <div className="col">
           <div className="card">
-            <img src={character.image} className="card-img-top" />
+            <img src={character.image} className="card-img-top img-fluid" />
             <div className="card-body">
               <h5 className="card-title">{character.name}</h5>
               <p className="card-text1">
@@ -27,9 +26,14 @@ const Card = () => {
                 {character.species}
               </p>
               <div className="buttons">
-                <button className="button">Learn more!</button>
+                <div className="button1">
+                  <Link to={`/Details/${character.id}`}>Learn more!</Link>
+                </div>
                 <br></br>
-                <button className="button" onClick={() => actions.handleFav(store.characters.name)}>
+                <button
+                  className="button"
+                  onClick={() => actions.handleFav(character.name)}
+                >
                   <i className="favorite icon fa-regular fa-heart"></i>
                 </button>
               </div>
@@ -38,8 +42,7 @@ const Card = () => {
         </div>
       </div>
     );
-  })
-
+  });
 };
 
 export default Card;
