@@ -16,7 +16,8 @@ const CardLocation = () => {
           <img src="https://i.pinimg.com/originals/05/f4/54/05f45421c953aba9b17c2d3a710f33dd.png" className="card-img-top img-fluid"/>
           <div className="card-body">
             <h3 className="card-title">{locations.name}</h3>
-            <p className="card-text">{locations.type}</p>
+            <p className="card-text"><strong>{locations.type}</strong></p>
+            <p className="card-text"><strong>Nº of characters inside: </strong>{locations.residents.length}</p>
             <div className="buttonfav">
               <button className="button" onClick={() => actions.handleFav(locations.name)}>
                   <i className="favorite icon fa-regular fa-heart"></i>

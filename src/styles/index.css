@@ -49,14 +49,20 @@
 }
 
 .horizontal-section2{
-    width: 500px;
+    width: 326px;
 }
 
 .horizontal-section1{
-    width: 500px;
+    width: 326px;
     
 }
 
 .buttonfav{
     float: right;
+}
+
+.horizontal-section3{
+    border-left-width: 1px;
+    margin-left: 364px;
+
 }

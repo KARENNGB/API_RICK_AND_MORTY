@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
+
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
 
@@ -33,21 +34,21 @@ export const Navbar = () => {
         </div>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <Link to="/demo">
+            <Link to="/">
               <button type="button" className="btn btn-outline-transparent">
                 <div className="text-white bg-transparent text-decoration-none">
                   Character
                 </div>
               </button>
             </Link>
-            <Link to="/demo">
+            <Link to="/">
               <button type="button" className="btn btn-outline-transparent">
                 <div className="text-white bg-transparent text-decoration-none">
                   Location
                 </div>
               </button>
             </Link>
-            <Link to="/demo">
+            <Link to="/">
               <button type="button" className="btn btn-outline-transparent">
                 <div className="text-white bg-transparent text-decoration-none">
                   Episode
