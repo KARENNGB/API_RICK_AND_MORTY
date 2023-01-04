@@ -49,11 +49,11 @@
 }
 
 .horizontal-section2{
-    width: 326px;
+    width: 400px;
 }
 
 .horizontal-section1{
-    width: 326px;
+    width: 400px;
     
 }
 
@@ -65,4 +65,8 @@
     border-left-width: 1px;
     margin-left: 364px;
 
+}
+
+.horizontal-section{
+    width: 400px;
 }

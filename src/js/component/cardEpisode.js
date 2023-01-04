@@ -18,9 +18,9 @@ const CardEpisode = () => {
               className="card-img-top img-fluid"
             />
             <div className="card-body">
-              <h3 className="card-title">
+              <h5 className="card-title">
                 <strong>Nº{episode.id}</strong>
-              </h3>
+              </h5>
               <p className="card-text">{episode.name}</p>
               <p className="card-text"><strong>Nº of characters inside: </strong>{episode.characters.length}</p>
               <div className="buttonfav">
