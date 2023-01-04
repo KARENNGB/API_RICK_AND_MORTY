@@ -24,7 +24,7 @@ const CardEpisode = () => {
               </h3>
               <p className="card-text">{episode.name}</p>
               <div className="buttonfav">
-              <button className="button" onClick={() => actions.handleFav(locations.name)}>
+              <button className="button" onClick={() => actions.handleFav(episode.name)}>
                   <i className="favorite icon fa-regular fa-heart"></i>
               </button>
               </div>
