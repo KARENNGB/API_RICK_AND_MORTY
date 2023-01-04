@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
-import { Link, useParams } from "react-router-dom";
 
 const CardEpisode = () => {
   const { store, actions } = useContext(Context);
@@ -23,6 +22,7 @@ const CardEpisode = () => {
                 <strong>Nº{episode.id}</strong>
               </h3>
               <p className="card-text">{episode.name}</p>
+              <p className="card-text"><strong>Nº of characters inside: </strong>{episode.characters.length}</p>
               <div className="buttonfav">
               <button className="button" onClick={() => actions.handleFav(episode.name)}>
                   <i className="favorite icon fa-regular fa-heart"></i>
